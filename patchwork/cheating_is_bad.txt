@@ -1,0 +1,3 @@
+So first I ran the code to see what it does. I so the printed text. I opened the file on IDA and i could see that there is a 'jz' in the main Func. My assumption was that changing the 'jz' which causes a jump if the zero flag in turned in, to 'jnz' which does the opposite, that will get the required flag. In order to do so i searched in the Ass file the jz's opcode, which is 74, I found it and changed it to 75 which is the opcode of 'jnz'. After doing so i run the file once again and like a magic it worked! 
+YAY :)
+Noam Leabovich.
